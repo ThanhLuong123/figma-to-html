@@ -485,11 +485,13 @@ a {
 }
 .blog .blog-list {
   display: flex;
+  overflow: hidden;
   margin-top: 55px;
   gap: 30px;
 }
 .blog .item {
-  width: 33.333%;
+  flex-shrink: 0;
+  width: calc(33.33% - 20px);
   background-color: #fff;
   border-radius: 16px;
 }
@@ -542,7 +544,25 @@ a {
 }
 .blog .item .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 .blog .item .btn:hover {
   background-color: var(--primary-color);
+}
+.blog .dots {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+.blog .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5f5b53;
+  cursor: pointer;
+}
+.blog .dot.active {
+  background: var(--primary-color);
+  cursor: default;
 }
