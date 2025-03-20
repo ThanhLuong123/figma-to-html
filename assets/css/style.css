@@ -453,3 +453,18 @@ a {
   height: 50px;
   background-color: var(--primary-color);
 }
+/* ========================Features 2======================= */
+.feature-nd2 {
+  margin-top: 70px;
+}
+.feature-nd2 .body {
+  flex-direction: row-reverse;
+}
+.feature-nd2 .content {
+  width: 49%;
+}
+.feature-nd2 .images img{
+  width: 470px;
+  height: 440px;
+  
+}
